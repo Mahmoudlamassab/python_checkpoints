@@ -1,7 +1,7 @@
 def two_sum(numbers, target):
     
     for i, num in enumerate(numbers):
-        for j, nb in enumerate(numbers):
+        for j, nb in enumerate(numbers[i + 1:], start=i + 1):
             if num + nb == target and i != j:
                 return [i, j]
 
