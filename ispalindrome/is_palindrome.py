@@ -10,6 +10,7 @@ def is_palindrome(s):
 
     return cleaned == cleaned[::-1]
 
+
 assert is_palindrome("Never odd or even") is True
 assert is_palindrome("A man, a plan, a canal: Panama") is True
 assert is_palindrome("hello") is False
